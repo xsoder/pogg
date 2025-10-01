@@ -1,7 +1,7 @@
 # POGG
 
 >![WARNING]
-> Linux and Macos only for the start script 
+> Linux and Macos only for the start script.
 
 The ultimate simple GUI video and audio downloader for youtube.
 
