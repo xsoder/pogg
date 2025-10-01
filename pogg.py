@@ -214,7 +214,7 @@ class YouTubeDownloader(tk.Tk):
         self.search_var = tk.StringVar()
         self.download_type = tk.StringVar(value="video")
         self.download_quality = tk.StringVar(value="best")
-        self.download_folder = os.path.join(os.path.expanduser("~"), "Downloads", "Pogg")
+        self.download_folder = os.path.join(os.path.expanduser("~"), "media", "Videos", "Downloads")
         self.video_cards = []
         self.executor = ThreadPoolExecutor(max_workers=3)
         self.num_results = tk.StringVar(value="50")
@@ -307,6 +307,9 @@ class YouTubeDownloader(tk.Tk):
                        background=theme['bg'], 
                        foreground=theme['fg'],
                        font=('Iosevka', 10))
+        style.map('TRadiobutton',
+                 background=[('active', theme['bg'])],
+                 foreground=[('active', theme['fg'])])
         
         style.configure('TEntry',
                        fieldbackground=theme['input_bg'],
@@ -369,6 +372,9 @@ class YouTubeDownloader(tk.Tk):
                        background=theme['bg'],
                        foreground=theme['fg'],
                        font=('Iosevka', 10))
+        style.map('TCheckbutton',
+                 background=[('active', theme['bg'])],
+                 foreground=[('active', theme['fg'])])
         
         style.configure('TProgressbar',
                        background=theme['accent'],
@@ -784,3 +790,4 @@ class YouTubeDownloader(tk.Tk):
 if __name__ == "__main__":
     app = YouTubeDownloader()
     app.mainloop()
+
