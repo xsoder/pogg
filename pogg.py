@@ -153,7 +153,7 @@ class VideoCard(ttk.Frame):
             btn_frame, 
             text="Visit Channel", 
             command=self.on_channel_click,
-            width=12
+            width=14
         )
         self.channel_btn.pack(side=tk.LEFT)
         

@@ -3,7 +3,7 @@
 > [!WARNING]
 > Linux and Macos only for the start script.
 
-The ultimate simple GUI video and audio downloader for youtube.
+YT-DLP Frontend With Tkinter With Additional Feature.
 
 ![Screenshot-1](demo1.png)
 ![Screenshot-2](demo2.png)
@@ -14,5 +14,5 @@ The ultimate simple GUI video and audio downloader for youtube.
 Just run the start script. Dependency is done through the requirements.txt.
 
 ``` bash
-    $ ./start
+./start
 ```
